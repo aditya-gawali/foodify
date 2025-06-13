@@ -1,1 +1,3 @@
 # foodify
+
+Food ordering website
