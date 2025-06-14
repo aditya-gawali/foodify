@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // placing user order for frontend
 
 const placeOrder = async (req, res) => {
-  const frontend_url = "https://foodify-server-b0k3.onrender.com";
+  const frontend_url = "https://foodify-umber.vercel.app";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
