@@ -5,7 +5,8 @@ import axios from 'axios';
 import { toast } from 'sonner';
 
 export const useStore = create((set, get) => ({
-    url: 'https://foodify-server-b0k3.onrender.com',
+    //url: 'https://foodify-server-b0k3.onrender.com',
+    url: 'http://15.207.220.41',
     token: '',
     food_list: [],
     cartItems: {},
