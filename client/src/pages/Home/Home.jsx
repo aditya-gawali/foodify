@@ -12,10 +12,10 @@ const Home = () => {
 
     fetchFoodList();
     setFoodList(food_list)
-    loadCartData()
     setToken(localStorage.getItem('token'))
-
+    // loadCartData()
   }, [userId])
+
 
   return (
     <div>

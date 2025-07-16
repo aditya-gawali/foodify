@@ -5,8 +5,7 @@ import { useStore } from '../../stores/useStore';
 
 const FoodItem = ({ id, name, price, description, image }) => {
 
-  const { cartItems,food_list, addToCart, removeFromCart } = useStore();
-  console.log(food_list)
+  const { cartItems, food_list, addToCart, removeFromCart } = useStore();
   return (
     <div className='food-item'>
       <div className='food-item-img-container'>
@@ -18,7 +17,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
             <p>{cartItems[id]}</p>
             <img onClick={() => addToCart(id)} src={assets.add_icon_green} alt="" />
           </div>
-
+  
         }
       </div>
       <div className='food-item-info'>

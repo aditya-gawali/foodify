@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
+import Index from "./components/Navbar/Index.jsx";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
@@ -16,7 +17,7 @@ const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const { setToken, setUserId } = useStore();
 
-    useEffect(() => {
+  useEffect(() => {
     const savedToken = localStorage.getItem('token');
     const savedUserId = localStorage.getItem('userId');
     if (savedToken) {
@@ -33,6 +34,7 @@ const App = () => {
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="app">
         <Navbar setShowLogin={setShowLogin} />
+        {/* <Index /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />

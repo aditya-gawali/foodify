@@ -32,9 +32,9 @@ const LoginPopup = ({ setShowLogin }) => {
 
     if (response.data.success) {
       setToken(response.data.token);
+      setUserId(response.data.userId);
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("userId", response.data.userId);
-      setUserId(response.data.userId);
       setShowLogin(false);
       toast.success("login successful", {
         icon: '✅',

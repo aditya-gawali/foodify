@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="footer-content-left">
                     <img src={assets.logo_dark} alt="" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas porro quasi dolorem mollitia sed culpa, dolore amet rem sapiente dolor corporis odio pariatur, impedit quaerat expedita vel consequatur quam.</p>
-                    <div className="footer-social-icons">
+                    <div className="flex footer-social-icons">
                         <img src={assets.facebook_icon} alt="" />
                         <img src={assets.twitter_icon} alt="" />
                         <img src={assets.linkedin_icon} alt="" />
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <p className="footer-copyright">Copyright 2924 @ foodify.com - All Right Reserved</p>
+            <p className="footer-copyright">Copyright {new Date().getFullYear()} @ foodify.com - All Right Reserved</p>
         </div>
     )
 }
