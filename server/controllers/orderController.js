@@ -7,7 +7,7 @@ console.log(process.env.STRIPE_SECRET_KEY)
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173"; // Change this to your frontend URL
+  const frontend_url = "https://foodify-umber.vercel.app"; // Change this to your frontend URL
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
