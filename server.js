@@ -6,7 +6,7 @@ import orderRouter from "./routes/orderRoute.js"
 import dotenv from 'dotenv';
 dotenv.config(); // Ensure this is at the very top
 const app = express()
-const port = 4000
+const port = 4004
 
 app.use(express.json())
 app.use(cors())
